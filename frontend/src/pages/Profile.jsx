@@ -15,7 +15,7 @@ const Profile = () => {
     const fetchProfile = async () => {
         try {
             const token = localStorage.getItem('token');
-            const response = await axios.get('http://localhost:4000/api/user/profile', {
+            const response = await axios.get('https://global-mart-backend.onrender.com/api/user/profile', {
                 headers: { token },
             });
 
@@ -59,7 +59,7 @@ const Profile = () => {
         }
 
         try {
-            const response = await axios.put('http://localhost:4000/api/user/update-profile', formData, {
+            const response = await axios.put('https://global-mart-backend.onrender.com/api/user/update-profile', formData, {
                 headers: {
                     token,
                     'Content-Type': 'multipart/form-data',
