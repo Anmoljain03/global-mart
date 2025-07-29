@@ -5,7 +5,7 @@ const AdminUserList = () => {
     const [loading, setLoading] = useState(true);
 
     const token = localStorage.getItem("token");
-    const API_BASE = "http://localhost:4000";
+    const API_BASE = "https://global-mart-backend.onrender.com";
 
     const fetchUsers = async () => {
         try {
